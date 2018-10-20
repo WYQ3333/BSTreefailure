@@ -74,3 +74,37 @@ void RemoveBSTree(pBSTree *pBS, KeyType data)//删除节点
 	pBSTree cur = *pBS;
 	if (cur->data ==)
 }
+
+
+//搜索二叉树
+//中序有序
+//搜索
+//如果key == root->key找到了
+//如果key<root->key需要到左子树中去找
+//如果key>root->key需要到右子树中去找
+//若果root == NULL  key 不在搜索二叉树中
+//插入
+//先进行查找
+//如果找到了，插入失败
+//如果root == NULL; 插入失败
+//
+//
+//if (cur->right == NULL)
+//{
+//	if (parent == NULL)
+//	{
+//		*root = cur->left;
+//		free(cur);
+//		return;
+//	}
+//	if (cur == parent->left)
+//	{
+//		parent->left = cur->left;
+//	}
+//	else
+//	{
+//		parent->right = cur->left;
+//	}
+//}
+//
+//替换法：左子树中的最大值或者右子树中的最小值
